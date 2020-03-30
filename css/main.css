@@ -11,6 +11,13 @@ Primary use:
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
+#server-paragraph {
+  font-weight: bold; 
+  padding: 5px;
+  color: white; 
+  background: #97c22c;
+}
+
 @font-face {
   font-family: Ubuntu-Regular;
   src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf'); 
