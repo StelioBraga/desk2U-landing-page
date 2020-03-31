@@ -9,7 +9,8 @@
     $('#submitbutton').on('click', function () {
         var check = true;
 
-        $('#msgcontainer').css('display', 'none')
+        $('#msgcontainersuccess').css('display', 'none');
+        $('#msgcontainererror').css('display', 'none')
 
         for (var i = 0; i < input.length; i++) {
             if (validate(input[i]) == false) {
@@ -75,12 +76,13 @@
 
         xhr.onloadend = response => {
            $('#submitbutton').prop('disabled', false);
-           $('#msgcontainer').css('display', 'block');
            $('form').css('opacity', 1);
 
             if (response.target.status === 200) {
+                $('#msgcontainersuccess').css('display', 'block');
                 form.reset();
             } else {
+                $('#msgcontainererror').css('display', 'block');
                 form.reset();
             }
         };

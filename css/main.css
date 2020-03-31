@@ -11,11 +11,26 @@ Primary use:
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
-#server-paragraph {
+#server-paragraph1 {
   font-weight: bold; 
   padding: 5px;
   color: white; 
   background: #97c22c;
+}
+
+#server-paragraph2 {
+  font-weight: bold; 
+  padding: 5px;
+  color: white; 
+  background: hsl(9, 92%, 50%);
+}
+
+#msgcontainersuccess {
+  display: none;
+}
+
+#msgcontainererror {
+  display: none;
 }
 
 @font-face {
